@@ -1,4 +1,4 @@
-package com.example.backend;
+package com.example.backend.test;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping
-    (method = {RequestMethod.})
-    //É POSSIVEL ESPECIFICAR UM @RequestMapping com
-    // @RequestMapping(method = RequestMethod.)
+    /*  É POSSIVEL ESPECIFICAR UM @RequestMapping com
+        @RequestMapping(method = RequestMethod.METODO_QUE_VOCE_QUER,produces=TIPO ) //O produces É O TIPO DE RETORNO QUE VAI GERAR COMO JSON XML ETC
+        OU UMA LISTA DELES (method = {RequestMethod.METODO_QUE_VOCE_QUER,})
+    */
     public String hello(){
         return "hello world";
     }
